@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: aqua;
+}
+
+header nav{
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+header nav div.logo img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    padding: 5px;
+    list-style-type: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+/* main */
+
+main{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png');
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.banner{
+    text-align: center;
+    max-width: 800px;
+}
+
+div.banner h2{
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+div.banner p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+div.banner button{
+    background-color: bisque;
+    border: none;
+    padding: 10px 25px;
+    margin-bottom: 15px;
+}
+
+/* card container */
+section{
+    padding: 80px;
+}
+section h2{
+    text-align: center;
+    padding: 15px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.card{
+    height: 400px;
+    width: 300px;
+    background-color: aqua;
+}
+.card .card-image{
+    height: 50%;
+}
+.card .card-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .card-text{
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 50%;
+}
+
+.card .card-text p{
+    text-align: center;
+
+}
